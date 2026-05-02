@@ -9,7 +9,7 @@ export async function getDreamInterpretation(dreamText) {
     throw new Error('Server misconfigured: GEMINI_API_KEY is missing');
   }
 
-  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+  const model = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite-preview';
   
   try {
     const generativeModel = gemini.getGenerativeModel({
